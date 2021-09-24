@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df93d76d-f7e1-43e3-9964-0b99fdda8f28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/first_part/cal_vl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_part/more_video_control.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_part/more_video_control_cb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_part/more_video_control_perf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_part/more_video_control_sb_perf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/berkeley.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bounce.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cornell.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stanford.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/two_bounce.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/two_collide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_part/two_collide.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_part/two_collide.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632430102088</updated>
       <workItem from="1632430103642" duration="14822000" />
+      <workItem from="1632504513009" duration="1629000" />
     </task>
     <servers />
   </component>
@@ -163,8 +153,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab2$test.coverage" NAME="test Coverage Results" MODIFIED="1632444665769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_part" />
-    <SUITE FILE_PATH="coverage/lab2$two_collide.coverage" NAME="two_collide Coverage Results" MODIFIED="1632447391260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_part" />
+    <SUITE FILE_PATH="coverage/lab2$test.coverage" NAME="test Coverage Results" MODIFIED="1632504529734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_part" />
+    <SUITE FILE_PATH="coverage/lab2$two_collide.coverage" NAME="two_collide Coverage Results" MODIFIED="1632504534306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_part" />
     <SUITE FILE_PATH="coverage/lab2$bounce.coverage" NAME="bounce Coverage Results" MODIFIED="1632438931750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_part" />
     <SUITE FILE_PATH="coverage/lab2$two_bounce.coverage" NAME="two_bounce Coverage Results" MODIFIED="1632444750480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_part" />
   </component>
