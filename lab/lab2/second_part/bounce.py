@@ -1,21 +1,24 @@
 import pygame
 import os
-import cv2
-import matplotlib.pyplot as plt
+import time
+import RPi.GPIO as GPIO
+import subprocess
 
+# os.putenv('SDL_VIDEODRIVER', 'fbcon')
+# os.putenv('SDL_FBDEV', '/dev/fb1')
 
-
-
-
-
-
-
+os.putenv('SDL_VIDEODRIVER', 'fbcon')
+os.putenv('SDL_FBDEV', '/dev/fb1')
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(27, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 
 
 if __name__ == "__main__":
 
-    size = width, height = 500, 400
+
+
+    size = width, height = 320, 240
     speed = [1, 2]
     black = 0, 0, 0
 
@@ -24,6 +27,13 @@ if __name__ == "__main__":
     ballRect = ball.get_rect()
 
     while True:
+        if (not GPIO.input(27)):
+            # print (" ")
+            # print "Button 27 pressed...."
+            break;
+
+
+        time.sleep(0.02)
         ballRect = ballRect.move(speed)
         if ballRect.left < 0 or ballRect.right > width:
             speed[0] = -speed[0]
