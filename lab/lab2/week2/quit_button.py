@@ -4,6 +4,11 @@ import time
 import pygame
 import numpy as np
 from pygame.locals import *     # input events
+# import RPi.GPIO as GPIO
+
+# GPIO button for quit
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(27, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # un-comment these statements when using monitor!
 # os.putenv('SDL_VIDEODRIVER', 'fbcon')       # display on piTFT
@@ -30,7 +35,8 @@ if __name__ == "__main__":
     rect1.__setattr__("right", 320)
 
     # texts initialization
-    my_font = pygame.font.Font(None, 50)
+    my_font = pygame.font.Font(None, 25)
+    my_font.set_bold(True)
     my_buttons = {'button1': (80, 180), 'button2': (240, 180)}
     screen.fill(BLACK)
 
@@ -38,7 +44,9 @@ if __name__ == "__main__":
     text_rect = text_surface.get_rect(center=(160, 200))
     screen.blit(text_surface, text_rect)
 
-    print(text_rect)
+
+
+    # print(my_font.size("chenghuili"))
 
     pygame.display.flip()
 
@@ -46,6 +54,12 @@ if __name__ == "__main__":
     quit = False
 
     while not quit:
+        # time.sleep(0.02)
+        # if (not GPIO.input(27)):
+        #     # print (" ")
+        #     # print "Button 27 pressed...."
+        #     break;
+
         for event in pygame.event.get():
             # print(event)
             if event.type == MOUSEBUTTONDOWN:

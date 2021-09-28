@@ -2,11 +2,11 @@ import math
 import time
 import pygame
 import numpy as np
-import RPi.GPIO as GPIO
+# import RPi.GPIO as GPIO
 import os
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(27, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(27, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 os.putenv('SDL_VIDEODRIVER', 'fbcon')
 os.putenv('SDL_FBDEV', '/dev/fb1')
 
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     speed2 = [1, 7]
     black = 0, 0, 0
 
-    r = 25
+    # r = 25
 
     screen = pygame.display.set_mode(size)
     ball1 = pygame.image.load("berkeley.png")
@@ -29,13 +29,12 @@ if __name__ == "__main__":
 
     cnt = 0
     while True:
-        time.sleep(0.02)
 
-        time.sleep(0.02)
-        if (not GPIO.input(27)):
-            # print (" ")
-            # print "Button 27 pressed...."
-            break;
+        # time.sleep(0.02)
+        # if (not GPIO.input(27)):
+        #     # print (" ")
+        #     # print "Button 27 pressed...."
+        #     break;
 
         ball1Rect = ball1Rect.move(speed1)
         ball2Rect = ball2Rect.move(speed2)
