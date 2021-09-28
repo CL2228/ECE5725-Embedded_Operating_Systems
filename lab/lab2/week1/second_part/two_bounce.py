@@ -1,16 +1,19 @@
 import pygame
 import os
 import time
-# import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 import subprocess
 
 # GPIO.setmode(GPIO.BCM)
 # GPIO.setup(27, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(27, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
 
 if __name__ == "__main__":
 
-    # os.putenv('SDL_VIDEODRIVER', 'fbcon')
-    # os.putenv('SDL_FBDEV', '/dev/fb0')
+    os.putenv('SDL_VIDEODRIVER', 'fbcon')
+    os.putenv('SDL_FBDEV', '/dev/fb1')
 
     size = width, height = 320, 240
     speed1 = [1, 2]
@@ -25,10 +28,10 @@ if __name__ == "__main__":
 
     while True:
         time.sleep(0.02)
-        # if (not GPIO.input(27)):
-        #     # print (" ")
-        #     # print "Button 27 pressed...."
-        #     break;
+        if (not GPIO.input(27)):
+            # print (" ")
+            # print "Button 27 pressed...."
+            break;
 
 
         ball1Rect = ball1Rect.move(speed1)
