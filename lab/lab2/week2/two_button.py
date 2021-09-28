@@ -39,7 +39,6 @@ rect2.__setattr__("right", 320)
 speed2 = [1, 7]
 _stick_count = 0
 _moving = -1
-test = 0
 
 # texts initialization
 control_button = pygame.font.Font(None, 25)
